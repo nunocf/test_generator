@@ -1,0 +1,8 @@
+%{
+  "bbmustache": {:hex, :bbmustache, "1.10.0", "ddc927463f0e95d66cdac889153af08015d609124d6d79006c248ad2de7f6ecd", [:rebar3], [], "hexpm", "43effa3fd4bb9523157af5a9e2276c493495b8459fc8737144aa186cb13ce2ee"},
+  "erlsom": {:hex, :erlsom, "1.5.0", "c5a5cdd0ee0e8dca62bcc4b13ff08da24fdefc16ccd8b25282a2fda2ba1be24a", [:rebar3], [], "hexpm", "55a9dbf9cfa77fcfc108bd8e2c4f9f784dea228a8f4b06ea10b684944946955a"},
+  "html_entities": {:hex, :html_entities, "0.4.0", "f2fee876858cf6aaa9db608820a3209e45a087c5177332799592142b50e89a6b", [:mix], [], "hexpm", "3e3d7156a272950373ce5a4018b1490bea26676f8d6a7d409f6fac8568b8cb9a"},
+  "pdf_generator": {:hex, :pdf_generator, "0.6.2", "601f145a0db0dcd7b8c35e1698038f78f18fc42eb3bd2001f826a3a239205f0e", [:mix], [], "hexpm", "82af2debaae156834b14dc0727cd8c3ded70ed4a2a909107d514bf28f5d1fc35"},
+  "sneeze": {:hex, :sneeze, "1.2.0", "cee8ce5b4b03db4036a2184379740899c94080e6d36ca07fcb35301db827a0f0", [:make, :mix], [{:html_entities, "0.4.0", [hex: :html_entities, repo: "hexpm", optional: false]}], "hexpm", "6d080268c1231d728267f9c362a8cd793368431c4c5ab76c2e059ff00c98a602"},
+  "xlsxir": {:hex, :xlsxir, "1.6.4", "d1e69439cbd9edc1190950f9f883ac364e1f31641e0395ccdb27761791b169a3", [:mix], [{:erlsom, "~> 1.5", [hex: :erlsom, repo: "hexpm", optional: false]}], "hexpm", "38e91f65eb8a4c8dea07d941c8b7e21baf8c8d4938232395c9ffd19d2eb071f2"},
+}
