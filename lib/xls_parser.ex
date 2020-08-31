@@ -17,13 +17,16 @@ defmodule XLSParser do
     |> elem(1)
     |> Enum.map(&extract_question/1)
     |> Enum.reject(fn
-      {nil, _} -> true
-      {_, nil} -> true
+      %{question_text: nil} -> true
+      %{answers: nil} -> true
+      %{difficulty: nil} -> true
+      %{type: nil} -> true
       _ -> false
     end)
   end
 
-  defp extract_question([_, _, _, _, question, _, _, answers | _t] = row) when is_list(row) do
-    {question, answers}
+  defp extract_question([_, type, _, _, question, _, difficulty, answers | _t] = row)
+       when is_list(row) do
+    %{question_text: question, answers: answers, type: type, difficulty: difficulty}
   end
 end
