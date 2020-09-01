@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -51,9 +52,41 @@
                 border: 2px solid #000000;
             }
 
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-bottom: 24px;
+                table-layout: fixed;
+            }
+
+            table, th, td {
+                border: 1px solid #000000;
+            }
+
+            th, td {
+                padding: 10px;
+                width: 33%;
+            }
+
+            td {
+                height: 25px;
+            }
         </style>
     </head>
     <body>
+        <table style="width:100%;">
+            <tr>
+                <th>IME</th>
+                <th>PREZIME</th>
+                <th>SAP BROJ</th>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+        </table>
+
         <%= for {%{question_text: question_text, answers: answers}, index} <- Enum.with_index(questions) do %>
             <div class="question">
                 <h3><%= index + 1 %>. <%= question_text %></h3>
