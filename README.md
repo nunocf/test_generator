@@ -19,6 +19,7 @@ Question type must be on column 2, questions on column 5, question difficulty on
 The answers are all in a box, separated by a `#`.
 
 run `iex -S mix` to start the app.
+
 then:
 
 `TestGenerator.generate_test("./spreadsheet_location.xlsx", 2, "test_name")`
